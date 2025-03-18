@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="week two assignment on advanced html">
+    <title>Assignment week two</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Structured HTML Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#ordered-list">Ordered List</a></li>
+            <li><a href="#external-image">External Image</a></li>
+            <li><a href="#contacts-table">Contacts Table</a></li>
+            <li><a href="#registration-form">Registration Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="ordered-list">
+            <h2>Ordered List</h2>
+            <ol type="I">
+                <li>Dogs</li>
+                <li>Cats</li>
+                <li>Lion</li>
+                <li>Gorilla</li>
+                <li>peacock</li>
+            </ol>
+        </section>
+
+        <section id="external-image">
+            <h2>External Image</h2>
+            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="A picture of two golden retriever puppies" width="600">
+        </section>
+
+        <section id="contacts-table">
+            <h2>Contacts Table</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td> Eddy</td>
+                    <td>123 Main Str</td>
+                    <td>+1234567890</td>
+                    <td>eddy@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Gerald</td>
+                    <td>456 Elm St</td>
+                    <td>+0987654321</td>
+                    <td>gerald@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Michael</td>
+                    <td>789 Oak St</td>
+                    <td>+1122334455</td>
+                    <td>michael@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>321 Pine St</td>
+                    <td>+6677889900</td>
+                    <td>sarah@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>David</td>
+                    <td>654 Cedar St</td>
+                    <td>+4455667788</td>
+                    <td>david@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="registration-form">
+            <h2>Registration Form</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select><br><br>
+
+                <label>Interests:</label>
+                <input type="checkbox" id="sports" name="interests" value="Sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="Music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="reading" name="interests" value="Reading">
+                <label for="reading">Reading</label><br><br>
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Structured HTML Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
